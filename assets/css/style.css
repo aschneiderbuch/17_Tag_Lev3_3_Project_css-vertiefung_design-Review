@@ -1,5 +1,3 @@
-
-
 /* ***************   ??? wieso gibt es rechts einen weißen Balken ??? wie geht er weg ??? */
 
 /* ********** Font-Family ***********
@@ -116,7 +114,8 @@ header {
 }
 
 header>section {
-     width: 100vw;
+    background-color: red;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,11 +123,13 @@ header>section {
 }
 
 header>section>nav {
+    background-color: aqua;
     margin-left: 5vw;
     width: 20vw;
 }
 
 header>section>nav>a {
+    background-color: yellow;
     text-decoration: none;
     margin-left: 1vw;
     color: black;
@@ -154,11 +155,11 @@ header>section>article {
 
 header>section>article>button {
     background-color: #fff;
-    padding: 1vh 2vw 1vh 2vw ;
+    padding: 1vh 2vw 1vh 2vw;
     text-align: center;
 }
 
-header>section>article>button:hover{
+header>section>article>button:hover {
     background-color: black;
     color: #fff;
 }
@@ -175,8 +176,10 @@ header>p {
 /* ********************* main ************************** */
 
 main>section {
-    /* background-color: gray; */     /* * damit Einrückung unterlegt ist */
-    width: 90%;                 /* * damit alle Sections eingerückt sind */
+    /* background-color: gray; */
+    /* * damit Einrückung unterlegt ist */
+    width: 90%;
+    /* * damit alle Sections eingerückt sind */
     margin: 0 auto;
 }
 
@@ -204,8 +207,9 @@ section__ueberschriftDreiFiguren>img {
     /* * damit Bild ganze nicht gestaucht wird */
     height: 81vh;
     /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
-/*     max-width: 100%;
- */    /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
+    /*     max-width: 100%;
+ */
+    /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
     object-fit: cover;
     /* * Bild verzerrt sich nicht mehr */
 }
@@ -378,7 +382,7 @@ section__ueberschriftDreiFiguren>img {
     flex-direction: column;
     /* * damit articel mit Rot und Text drunter */
     align-items: center;
-    border-bottom: 2px solid #dddbdb ;
+    border-bottom: 2px solid #dddbdb;
 }
 
 .section__AchtUndZwanzigProzentMitUeberblendung>img {
@@ -428,39 +432,44 @@ section__ueberschriftDreiFiguren>img {
 /* ********************** Footer ********************* */
 /* ********************** Footer ********************* */
 
-footer{
+footer {
     /* background-color: red; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 15vh ;          /* * Abstand footer Überschrift zum Strich */
-    margin-bottom: 5vh;         /* * Abstand zum Ende der Seite */
+    margin-top: 15vh;
+    /* * Abstand footer Überschrift zum Strich */
+    margin-bottom: 5vh;
+    /* * Abstand zum Ende der Seite */
 }
 
-footer>h5{
+footer>h5 {
     font-size: 3.5rem;
 }
 
-footer>article{
+footer>article {
     display: flex;
-    margin-top: 10vh;           /* * Abstand von Bild zu Überschrift */
+    margin-top: 10vh;
+    /* * Abstand von Bild zu Überschrift */
 
 }
 
-footer>article>img{
-    width: 10vw;                /* * Bild verkleinern */
+footer>article>img {
+    width: 10vw;
+    /* * Bild verkleinern */
 }
 
-footer>article>p{
-    align-self: flex-end;       /* * Text unten links hin */
+footer>article>p {
+    align-self: flex-end;
+    /* * Text unten links hin */
     color: #9Fa2a7;
     font-size: 1.1rem;
     word-spacing: 0.1rem;
 
 }
 
-footer>article>p>a{
+footer>article>p>a {
     color: #27282a;
     text-decoration: none;
 }
@@ -474,10 +483,27 @@ footer>article>p>a{
 /* ****************** media Queries *************** */
 /* ****************** media Queries *************** */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
 
 
 
 
+header>section {
+    flex-direction: column;
+    height: 20vh;
+    justify-content: none;
+    align-items: center;
+}
 
-} /* ****************** Ende media Queries *************** */
+header>section>nav{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+
+
+}
+
+
+
+
+}/* ****************** Ende media Queries *************** */
