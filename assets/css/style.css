@@ -202,34 +202,33 @@ header>section>p {
 /* *********************** Bild links Text rechts *************** */
 
 .section__BildLinksTextRechts{
-    background-color: red;
     display: flex;
-    justify-content: space-between;
-}
+flex-direction: row;}
 
 .section__BildLinksTextRechts>img{
-    background-color: blue;
-    width: 50vw;
-    max-width: 35vw;
+    width: 35vw;
+    max-width: 40;          /* * ??????????? wieso max-width vergeben?? */
     object-fit: cover;          /* * damit es nicht verzerrt wird */
-    /* object-position: ; */
+    
+    /* object-position:center */ ; /* * Bild Ausschnitt zeigen  */
     margin-left: 5vw;
 }
 
 .section__BildLinksTextRechts>article{
-    background-color: green;
-    width: 42vw;
-    margin-right: 8vw;
+    width: 40vw;
+    margin-left: 1vw;
 }
 
 .section__BildLinksTextRechts>article>h2{
-    background-color: yellow;
-font-size: 3rem;
-margin-bottom: 5vh;     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift */
+font-size: 4rem;
+margin-bottom: 7vh;     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift */
 }
 
 .section__BildLinksTextRechts>article>h3{
-    background-color: blue ;
-    font-size: 1.3rem;
-    margin: ;
+    font-size: 1.7rem;
+    margin: 2vh 0 ;     /* * Abstand zu den Blck Texten */
+}
+
+.section__BildLinksTextRechts>article>p{
+    font-size: 1.4rem;
 }
