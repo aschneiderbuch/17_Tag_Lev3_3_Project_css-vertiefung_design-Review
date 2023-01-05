@@ -91,7 +91,7 @@ header>section {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    
+    height: 5vh;
 }
 
 header>section>nav {
@@ -134,9 +134,32 @@ header>section>p {
 
 
 
+
+
     /* ******************* Überschrift mit drei Figuren Bild ********** */
 
     .section__ueberschriftDreiFiguren{
-        
+        background-color: orange;
+        display: flex;
+        flex-direction: column; /* * damit p und img untereinander */
+        align-items: center;
     }
 
+    .section__ueberschriftDreiFiguren>p{
+        background-color: green;
+        margin-top: 5vh;
+        font-size: 2.3rem;
+
+    }
+
+.section__ueberschriftDreiFiguren>img{
+   width: 100%;             /* * damit Bild ganze nicht gestaucht wird */
+    height: 86vh;           /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
+    max-width: 100%;        /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
+}
+
+
+
+
+
+/* ********************** Zwei Text mit Dollar ******************* */
