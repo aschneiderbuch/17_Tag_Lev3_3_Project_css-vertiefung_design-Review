@@ -381,11 +381,17 @@ line-height: 1.5;       /* * 1.5 heißt 1,5 fache des normalen */
      background-color:red;
      height: 80vh;
      display: flex;
-     flex-wrap: wrap;
-     flex-direction: column;
-
+     /* flex-wrap: wrap;   */         /* * damit Mobile umbricht */
+     flex-direction: column;    /* * damit articel mit Rot und Text drunter */
+    align-items: center;     
 }
 
+.section__AchtUndZwanzigProzentMitUeberblendung>img{
+    width: 120%;
+        object-fit: cover;
+        object-position: 0px 0px;   /* * Bildausschnitt versezten */
+    
+}
 
 .section__AchtUndZwanzigProzentMitUeberblendung>article{
     background-color: yellow;
