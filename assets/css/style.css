@@ -628,7 +628,7 @@ font-size: 3rem;
 
 .section__AchtUndZwanzigProzentMitUeberblendung {
 background-color: red;
-height: 40vh;           /* * raus nehmen  */
+height: auto;          
 
 }
 
@@ -671,6 +671,41 @@ width: 60%;
 /* ********************** media - Footer ********************* */
 /* ********************** media - Footer ********************* */
 /* ********************** media - Footer ********************* */
+
+footer{
+    background-color: red;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+footer>h5{
+    background-color: blue;
+    font-size: 3rem;
+}
+
+footer>article {
+    flex-direction: column;
+    margin-top: 2vh;
+
+}
+
+footer>article>img {
+background-color: green;
+width: 30%;
+align-self: center;
+}
+
+
+footer>article>p {
+background-color: orange;
+margin-top: 3vh;
+font-size: 1.5rem;
+}
+
+
+
+
+
 
 
 
