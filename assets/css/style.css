@@ -303,14 +303,29 @@ section__ueberschriftDreiFiguren>img {
 
 .section__bildRechtsTextLinks--blau>article{
     background-color: blue;
+    padding-left: 2vw;
 }
 
+.section__bildRechtsTextLinks--blau>article>h2 {
+    background-color: aqua;
+    font-size: 4rem;
+    margin: 2vh 0
+}
 
+.section__bildRechtsTextLinks--blau>article>ol{
+    background-color: yellow;
+    padding-left: 3vw;
+    font-size: 1.4rem;
+}
 
+.section__bildRechtsTextLinks--blau>article>ol>li{
+    background-color: yellowgreen;
+}
 
-
-
-
+.section__bildRechtsTextLinks--blau>article>p{
+    background-color: orange;
+    font-size: 1.3rem;
+}
 
 .section__bildRechtsTextLinks--blau>img{
     background-color: red;
