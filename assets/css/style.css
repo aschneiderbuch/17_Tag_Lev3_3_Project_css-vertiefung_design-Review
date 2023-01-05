@@ -52,22 +52,22 @@ html {
 
 /* **** header button, */
 .fontFamily--GraphikMedium {
-    font-family: Graphik-Medium, sans-serif;
+    font-family: Graphik-Medium, ssans-serif;
 }
 
 /* **** header nav,  */
 .fontFamily--GraphikerRegular {
-    font-family: Graphik-Regular, sans-serif;
+    font-family: Graphik-Regular, ssans-serif;
 }
 
 /* **** main  */
 .fontFamily--Theimhardt-Lt {
-    font-family: Theinhardt-Lt, sans-serif;
+    font-family: Theinhardt-Lt, ssans-serif;
 }
 
 /* **** header p, */
 .fontFamily--TiempostHeadlineSemibold {
-    font-family: TiempostHeadline-Semibold, sans-serif;
+    font-family: TiempostHeadline-Semibold, ssans-serif;
 }
 
 /* ********* Color ********* */
@@ -123,6 +123,8 @@ header>section>p {
     background-color: yellow;
     width: 20vw;
     text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;               /* * Schrift in dick */
 }
 
 
@@ -163,3 +165,35 @@ header>section>p {
 
 
 /* ********************** Zwei Text mit Dollar ******************* */
+
+.section__texteUeberDollar{
+    background-color: red;
+    display: flex;
+
+    swidth: 100%;
+    margin: 10vh auto 15vh auto;
+}
+
+.section__texteUeberDollar>p{
+    background-color: blue;
+    margin-left: 5vw;
+    width: 49vw;
+    font-size: 1.3rem;
+}
+
+.section__texteUeberDollar>article{
+    background-color: green;
+    width: 10vw;
+    margin-left: 5vw;
+}
+
+.section__texteUeberDollar>article>p:nth-of-type(1){
+    background-color: yellow;
+    font-size: 2.5rem;
+}
+
+.section__texteUeberDollar>article>p:nth-of-type(2){
+    background-color: orange;
+    color: #9Fa2a7;
+    font-size: 1rem;
+}
