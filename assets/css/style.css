@@ -626,21 +626,51 @@ font-size: 3rem;
 
 /* ******************** media - 28 Prozent mit Überblendung und Text ***** */
 
+.section__AchtUndZwanzigProzentMitUeberblendung {
+background-color: red;
+height: 40vh;           /* * raus nehmen  */
+
+}
+
+
+.section__AchtUndZwanzigProzentMitUeberblendung>img {
+    background-color: yellow;
+}
+
+
+.section__AchtUndZwanzigProzentMitUeberblendung>article {
+    background-color: rgba(0, 255, 255, 0101);
+flex-direction: column;
+}
 
 
 
+.section__AchtUndZwanzigProzentMitUeberblendung>article>p {
+background-color: blue;
+width: 100%;
+margin: 0;
+padding: 0;
+text-align: center;
+font-size: 1.4rem;
+}
+
+.section__AchtUndZwanzigProzentMitUeberblendung>article>p>span {
+display: inline;
+}
 
 
+.section__AchtUndZwanzigProzentMitUeberblendung>article>img {
+background-color: rgba(0, 128, 0, 0.211);
+order:-1;
+margin: -2vh;
+align-self: center;
+width: 60%;
+}
 
 
-
-
-
-
-
-
-
-
+/* ********************** media - Footer ********************* */
+/* ********************** media - Footer ********************* */
+/* ********************** media - Footer ********************* */
 
 
 
