@@ -454,9 +454,9 @@ footer>article>p>a {
 @media only screen and (max-width: 600px) {
 
 
-/* ********************** media Header ******************** */
-/* ********************** media Header ******************** */
-/* ********************** media Header ******************** */
+/* ********************** media - Header ******************** */
+/* ********************** media - Header ******************** */
+/* ********************** media - Header ******************** */
 
 header{
     height: 85vh;
@@ -513,9 +513,9 @@ header>p{
     background-color: orange;
 }
 
-/* ********************* media main ************************** */
-/* ********************* media main ************************** */
-/* ********************* media main ************************** */
+/* ********************* media - main ************************** */
+/* ********************* media - main ************************** */
+/* ********************* media - main ************************** */
 
 main>section{
 
@@ -524,7 +524,7 @@ main>section{
 }
 
 
-/* ****************** media Zwei Text mit Dollar ******************* */
+/* ****************** media -  Zwei Text mit Dollar ******************* */
 
 
 
@@ -539,6 +539,33 @@ main>section{
 }
 
 
+/* ****************** media -  Bild links Text rechts *************** */
+
+.section__BildLinksTextRechts {
+background-color: red;
+
+}
+
+
+
+.section__BildLinksTextRechts>img {
+    background-color: blue;
+width: 60%;
+object-fit: cover;
+margin: auto;
+}
+
+.section__BildLinksTextRechts>article {
+    background-color: green;
+    margin: auto;
+    margin-top: 2vh;
+    width: 100%;
+    text-align: center;
+}
+
+.section__BildLinksTextRechts>article>h2 {
+margin-bottom: 3vh;
+}
 
 
 
