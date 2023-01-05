@@ -346,17 +346,48 @@ section__ueberschriftDreiFiguren>img {
     background-color: red;
     margin: 15vh auto;          /* * auto = section mittig */
     text-align: center;
-    width: 60vw;
+    width: 40vw;
 }
 
 .section__textUeberAchtUndZwanzigProzent>h4{
     background-color: blue;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 3vh;
 }
 
 .section__textUeberAchtUndZwanzigProzent>p{
 background-color: green;
-font-size: 1.4rem;
+font-size: 1.2rem;
+line-height: 1.5;       /* * 1.5 heißt 1,5 fache des normalen */
+}
 
+
+
+
+
+
+/* ************************* 28 Prozent mit Überblendung und Text ***** */
+
+.section__AchtUndZwanzigProzentMitUeberblendung{
+/*     
+
+    background-image: url("../img/28.png");
+    
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center ;
+     */
+
+     background-color:red;
+     height: 80vh;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+
+}
+
+
+.section__AchtUndZwanzigProzentMitUeberblendung>article{
+    background-color: yellow;
+    display: flex;
 }
