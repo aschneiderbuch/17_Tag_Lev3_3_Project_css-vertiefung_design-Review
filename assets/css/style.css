@@ -182,35 +182,6 @@ main>section {
 
 
 
-/* ******************* Überschrift mit drei Figuren Bild ********** */
-
-
-section__ueberschriftDreiFiguren {
-    display: flex;
-    flex-direction: column;
-    /* * damit p und img untereinander */
-    align-items: center;
-}
-
-section__ueberschriftDreiFiguren>p {
-    margin-top: 10vh;
-    /* * Abstand zum header */
-    font-size: 2.3rem;
-
-}
-
-section__ueberschriftDreiFiguren>img {
-    width: 100vw;
-    /* * damit Bild ganze nicht gestaucht wird */
-    height: 81vh;
-    /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
-    /*     max-width: 100%;
- */
-    /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
-    object-fit: cover;
-    /* * Bild verzerrt sich nicht mehr */
-}
-
 
 
 
@@ -483,7 +454,14 @@ footer>article>p>a {
 @media only screen and (max-width: 600px) {
 
 
+/* ********************** media Header ******************** */
+/* ********************** media Header ******************** */
+/* ********************** media Header ******************** */
 
+header{
+    height: 85vh;
+
+}
 
 header>section {
     background-color: red;
@@ -534,6 +512,37 @@ header>section>article>button{
 header>p{
     background-color: orange;
 }
+
+/* ********************* media main ************************** */
+/* ********************* media main ************************** */
+/* ********************* media main ************************** */
+
+main>section{
+
+    background-color: grey;
+    margin-top: -25vh;
+}
+
+
+/* ****************** media Zwei Text mit Dollar ******************* */
+
+
+
+.section__texteUeberDollar>article{
+    background-color: red;
+    width:25vw
+}
+
+.section__texteUeberDollar>article>p:nth-of-type(2) {
+    background-color: yellow;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
 
 
 
