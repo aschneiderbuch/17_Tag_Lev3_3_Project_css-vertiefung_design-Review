@@ -569,10 +569,45 @@ margin-bottom: 3vh;
 
 
 
+/* ****************** media - Bild rechts Text links *************** */
+
+
+.section__bildRechtsTextLinks--blau {
+background-color: red;
+flex-direction: column;
+justify-content: center;
+margin-top: -7vh;
+}
+
+
+.section__bildRechtsTextLinks--blau>article {
+background-color: blue;
+order:1;
+}
+
+.section__bildRechtsTextLinks--blau>article>h2 {
+text-align: center;
+font-size: 3rem;
+}
+
+.section__bildRechtsTextLinks--blau>article>ol {
+background-color: yellow;
+padding-left: 4vw;
+
+}
 
 
 
 
+
+
+.section__bildRechtsTextLinks--blau>img {
+background-color: green;
+order: -1
+}
+
+
+/* ******************* media - Text über 28 Prozent ******** ******* */
 
 
 
