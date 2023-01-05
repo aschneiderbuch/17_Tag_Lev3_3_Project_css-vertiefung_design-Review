@@ -114,7 +114,6 @@ header {
 }
 
 header>section {
-    background-color: red;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -123,13 +122,11 @@ header>section {
 }
 
 header>section>nav {
-    background-color: aqua;
     margin-left: 5vw;
     width: 20vw;
 }
 
 header>section>nav>a {
-    background-color: yellow;
     text-decoration: none;
     margin-left: 1vw;
     color: black;
@@ -489,6 +486,7 @@ footer>article>p>a {
 
 
 header>section {
+    background-color: red;
     flex-direction: column;
     height: 20vh;
     justify-content: none;
@@ -496,12 +494,59 @@ header>section {
 }
 
 header>section>nav{
+    background-color: green;
     width: 100%;
     margin-left: 0;
     text-align: center;
-
-
 }
+
+header>section>nav>a{
+    background-color: aqua;
+    margin-left:0;
+    font-size: 2rem;
+    margin: 0 2vw;
+    
+}
+
+header>section>p{
+    background-color: green;
+width: 100%;
+font-size: 2rem;
+margin: 2vh 0;
+}
+
+header>section>article{
+    background-color: green;
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+} 
+
+header>section>article>button{
+    background-color: yellow;
+    
+    padding: 3vh 8vw;
+    font-size: 2.3rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
