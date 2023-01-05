@@ -87,7 +87,6 @@ img {
 /* ********************** Header ******************** */
 
 header>section {
-    background-color: red;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -95,7 +94,6 @@ header>section {
 }
 
 header>section>nav {
-    background-color: rgb(149, 149, 230);
     margin-left: 5vw;
     width: 20vw;
 }
@@ -105,7 +103,6 @@ header>section>nav>a{
     margin-left: 1vw;
 }
 header>section>article{
-    background-color: green;
     width: 20vw;
     text-align: right;
     padding-right: 5vw;
@@ -114,13 +111,13 @@ padding-bottom: 1vh;
 }
 
 /* *************************************** Button größer ????? ********* */
+/* *  evtl. mal als p veruschen oder ID */
 header>section>button {
     background-color: #fff;
     text-align:right ;
 }
 
 header>section>p {
-    background-color: yellow;
     width: 20vw;
     text-align: center;
     font-size: 1.6rem;
@@ -141,23 +138,22 @@ header>section>p {
     /* ******************* Überschrift mit drei Figuren Bild ********** */
 
     .section__ueberschriftDreiFiguren{
-        background-color: orange;
         display: flex;
         flex-direction: column; /* * damit p und img untereinander */
         align-items: center;
     }
 
     .section__ueberschriftDreiFiguren>p{
-        background-color: green;
-        margin-top: 5vh;
+        margin-top: 10vh;               /* * Abstand zum header */
         font-size: 2.3rem;
 
     }
 
 .section__ueberschriftDreiFiguren>img{
    width: 100%;             /* * damit Bild ganze nicht gestaucht wird */
-    height: 86vh;           /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
+    height: 81vh;           /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
     max-width: 100%;        /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
+    object-fit: cover;      /* * Bild verzerrt sich nicht mehr */
 }
 
 
@@ -167,7 +163,6 @@ header>section>p {
 /* ********************** Zwei Text mit Dollar ******************* */
 
 .section__texteUeberDollar{
-    background-color: red;
     display: flex;
 
     swidth: 100%;
@@ -175,25 +170,35 @@ header>section>p {
 }
 
 .section__texteUeberDollar>p{
-    background-color: blue;
     margin-left: 5vw;
     width: 49vw;
     font-size: 1.3rem;
 }
 
 .section__texteUeberDollar>article{
-    background-color: green;
     width: 10vw;
     margin-left: 5vw;
 }
 
 .section__texteUeberDollar>article>p:nth-of-type(1){
-    background-color: yellow;
     font-size: 2.5rem;
 }
 
 .section__texteUeberDollar>article>p:nth-of-type(2){
-    background-color: orange;
     color: #9Fa2a7;
     font-size: 1rem;
+}
+
+
+
+
+
+
+
+/* *********************** Bild links Text rechts *************** */
+
+.section__BildLinksTextRechts{
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
 }
