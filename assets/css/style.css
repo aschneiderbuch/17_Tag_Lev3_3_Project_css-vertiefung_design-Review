@@ -60,7 +60,10 @@ font-family: Graphik-Medium, sans-serif;
 font-family: Graphik-Regular, sans-serif;
 }
 
-/* font-family: Theinhardt-Lt, sans-serif; */
+/* **** main  */
+.fontFamily--Theimhardt-Lt{
+font-family: Theinhardt-Lt, sans-serif;
+}
 
 /* **** header p, */
 .fontFamily--TiempostHeadlineSemibold{
@@ -80,6 +83,6 @@ color: #2b2c2e#9Fa2a7 #27282a #848689 #3d3e41                ;
 
 
 
-/* ********************* Body ************************** */
-/* ********************* Body ************************** */
-/* ********************* Body ************************** */
+/* ********************* main ************************** */
+/* ********************* main ************************** */
+/* ********************* main ************************** */
