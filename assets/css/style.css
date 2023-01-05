@@ -529,34 +529,29 @@ main>section{
 
 
 .section__texteUeberDollar>article{
-    background-color: red;
     width:25vw
 }
 
 .section__texteUeberDollar>article>p:nth-of-type(2) {
-    background-color: yellow;
     font-size: 1.5rem;
 }
 
 
 /* ****************** media -  Bild links Text rechts *************** */
 
-.section__BildLinksTextRechts {
-background-color: red;
+/* .section__BildLinksTextRechts {
 
 }
-
+ */
 
 
 .section__BildLinksTextRechts>img {
-    background-color: blue;
 width: 60%;
 object-fit: cover;
 margin: auto;
 }
 
 .section__BildLinksTextRechts>article {
-    background-color: green;
     margin: auto;
     margin-top: 2vh;
     width: 100%;
@@ -573,16 +568,14 @@ margin-bottom: 3vh;
 
 
 .section__bildRechtsTextLinks--blau {
-background-color: red;
-flex-direction: column;
+flex-direction: column;             /* * umbrechen übereinander */
 justify-content: center;
 margin-top: -7vh;
 }
 
 
 .section__bildRechtsTextLinks--blau>article {
-background-color: blue;
-order:1;
+order:1;                            /* * bild soll oben sein Bild hat Order-1 */
 }
 
 .section__bildRechtsTextLinks--blau>article>h2 {
@@ -591,7 +584,6 @@ font-size: 3rem;
 }
 
 .section__bildRechtsTextLinks--blau>article>ol {
-background-color: yellow;
 padding-left: 4vw;
 
 }
@@ -602,7 +594,6 @@ padding-left: 4vw;
 
 
 .section__bildRechtsTextLinks--blau>img {
-background-color: green;
 order: -1
 }
 
@@ -611,7 +602,6 @@ order: -1
 
 
 .section__textUeberAchtUndZwanzigProzent {
-background-color: red;
 width: 100%;
 margin: 3vh auto;
 }
@@ -627,41 +617,37 @@ font-size: 3rem;
 /* ******************** media - 28 Prozent mit Überblendung und Text ***** */
 
 .section__AchtUndZwanzigProzentMitUeberblendung {
-background-color: red;
-height: auto;          
+height: auto;          /* * sonst ist 70vh vom Desktop drin */
 
 }
 
 
-.section__AchtUndZwanzigProzentMitUeberblendung>img {
-    background-color: yellow;
-}
+/* .section__AchtUndZwanzigProzentMitUeberblendung>img {
+} */
 
 
 .section__AchtUndZwanzigProzentMitUeberblendung>article {
-    background-color: rgba(0, 255, 255, 0101);
-flex-direction: column;
+flex-direction: column;     /* * soll übereinander sein */
 }
 
 
 
 .section__AchtUndZwanzigProzentMitUeberblendung>article>p {
-background-color: blue;
 width: 100%;
-margin: 0;
+margin: 2vh 0;
 padding: 0;
 text-align: center;
 font-size: 1.4rem;
+line-height: 1.2;
 }
 
 .section__AchtUndZwanzigProzentMitUeberblendung>article>p>span {
-display: inline;
+display: inline;                /* * damit umbruch raus, damit es wieder fliestext wird */
 }
 
 
 .section__AchtUndZwanzigProzentMitUeberblendung>article>img {
-background-color: rgba(0, 128, 0, 0.211);
-order:-1;
+order:-1;                   /* * Bild soll oben sein */
 margin: -2vh;
 align-self: center;
 width: 60%;
@@ -673,31 +659,27 @@ width: 60%;
 /* ********************** media - Footer ********************* */
 
 footer{
-    background-color: red;
     margin-top: 5vh;
     margin-bottom: 3vh;
 }
 
 footer>h5{
-    background-color: blue;
     font-size: 3rem;
 }
 
 footer>article {
-    flex-direction: column;
+    flex-direction: column;     /* * soll übereinander sein Bild soll oben sein */
     margin-top: 2vh;
 
 }
 
 footer>article>img {
-background-color: green;
 width: 30%;
 align-self: center;
 }
 
 
 footer>article>p {
-background-color: orange;
 margin-top: 3vh;
 font-size: 1.5rem;
 }
@@ -705,15 +687,7 @@ font-size: 1.5rem;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-}/* ****************** Ende media Queries *************** */
+}
+/* ****************** Ende media Queries *************** */
+/* ****************** Ende media Queries *************** */
+/* ****************** Ende media Queries *************** */
