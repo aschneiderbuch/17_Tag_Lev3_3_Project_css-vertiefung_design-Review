@@ -50,6 +50,10 @@ html {
 /* ********************** Class  ********************* */
 /* ******* Font-Family ***** */
 
+/* *** ??????????????????????????? wieso gibt es fehler mit sans-serif ????
+* Schrift wird nicht richtig angezeigt wenn sans-serif dort seht, soll ja 
+* aber eigentlich die Backup Schrift sein */
+
 /* **** header button, */
 .fontFamily--GraphikMedium {
     font-family: Graphik-Medium, ssans-serif;
@@ -200,5 +204,32 @@ header>section>p {
 .section__BildLinksTextRechts{
     background-color: red;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.section__BildLinksTextRechts>img{
+    background-color: blue;
+    width: 50vw;
+    max-width: 35vw;
+    object-fit: cover;          /* * damit es nicht verzerrt wird */
+    /* object-position: ; */
+    margin-left: 5vw;
+}
+
+.section__BildLinksTextRechts>article{
+    background-color: green;
+    width: 42vw;
+    margin-right: 8vw;
+}
+
+.section__BildLinksTextRechts>article>h2{
+    background-color: yellow;
+font-size: 3rem;
+margin-bottom: 5vh;     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift */
+}
+
+.section__BildLinksTextRechts>article>h3{
+    background-color: blue ;
+    font-size: 1.3rem;
+    margin: ;
 }
