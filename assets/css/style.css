@@ -449,8 +449,8 @@ footer{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 15vh ;
-    margin-bottom: 5vh;
+    margin-top: 15vh ;          /* * Abstand footer Überschrift zum Strich */
+    margin-bottom: 5vh;         /* * Abstand zum Ende der Seite */
 }
 
 footer>h5{
@@ -461,9 +461,43 @@ footer>h5{
 footer>article{
     background-color: red;
     display: flex;
+    margin-top: 10vh;           /* * Abstand von Bild zu Überschrift */
 
 }
 
 footer>article>img{
     background-color: blue;
+    width: 10vw;                /* * Bild verkleinern */
 }
+
+footer>article>p{
+    background-color: green;
+    align-self: flex-end;       /* * Text unten links hin */
+    color: #9Fa2a7;
+    font-size: 1.1rem;
+    word-spacing: 0.1rem;
+
+}
+
+footer>article>p>a{
+    background-color: orange;
+    color: #27282a;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* ****************** media Queries *************** */
+/* ****************** media Queries *************** */
+/* ****************** media Queries *************** */
+
+@media only screen and (max-width: 600px){
+
+
+
+
+
+} /* ****************** Ende media Queries *************** */
