@@ -33,26 +33,7 @@ font-family: TiempostHeadline-Semibold, sans-serif;
 }
 
 
-/* ********************* Htm *************** */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    /* background-color: rgb(103, 96, 96); */    /*  * für Darkmode mit Button */
-    font-size: 16px;
-    scroll-behavior: smooth;
-    max-width: 1440px;
-    /* **** wenn Monitor mehr als 1440 px 
-                                    * dann kommt rechts weißer Streifen 
-                                    * da dann einfach max-width raus nehmen
-                                    * 1440px x 900px ist mac Display 
-                                    * da 0,625 Verhältniss
-                                 */
-}
 
 /* ********************** Class  ********************* */
 /* ******* Font-Family ***** */
@@ -81,15 +62,45 @@ html {
     font-family: TiempostHeadline-Semibold, ssans-serif;
 }
 
-/* ********* Color ********* */
+
+
+
+
+/* ********************* Htm *************** */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* background-color: rgb(103, 96, 96); */
+    /*  * für Darkmode mit Button */
+    font-size: 16px;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    /* **** wenn Monitor mehr als 1440 px 
+                                    * dann kommt rechts weißer Streifen 
+                                    * da dann einfach max-width raus nehmen
+                                    * 1440px x 900px ist mac Display 
+                                    * da 0,625 Verhältniss
+                                 */
+}
+
+
 
 
 
 /* ******************** Img **************** */
 
 img {
-    width: 400px;
+    width: 400px;              /* * damit anfangs im html die Bilder kleiner werden bis sie 
+                                * einzeln gestylt wurden */
 }
+
+
+
 
 /* ********************** Header ******************** */
 /* ********************** Header ******************** */
@@ -160,8 +171,8 @@ header>p {
 /* ********************* main ************************** */
 
 main {
-    background-color: gray;
-    width: 90vw;
+    /* background-color: gray; */     /* * damit Einrückung unterlegt ist */
+    width: 90vw;                /* * damit alle Sections eingerückt sind */
     margin: 0 auto;
     ;
 }
@@ -205,7 +216,8 @@ section__ueberschriftDreiFiguren>img {
 .section__texteUeberDollar {
     background-color: green;
     display: flex;
-    flex-wrap: wrap;                    /* * bricht bei Handy um, wenn es zu schmal wird */
+    flex-wrap: wrap;
+    /* * bricht bei Handy um, wenn es zu schmal wird */
     width: 100%;
     margin: 0vh auto 15vh auto;
 }
@@ -218,7 +230,8 @@ section__ueberschriftDreiFiguren>img {
 
 .section__texteUeberDollar>article {
     background-color: orange;
-    width: 10vw;                        /* * bei Handy vergrößern  */
+    width: 10vw;
+    /* * bei Handy vergrößern  */
     margin-left: 5vw;
 }
 
@@ -251,8 +264,10 @@ section__ueberschriftDreiFiguren>img {
 
 .section__BildLinksTextRechts>img {
     background-color: blue;
-    width: 42vw;            /* * 90vw = 100% vom  */
-/* max-width: 40vw; */    /* * ??????????? wieso max-width vergeben?? */
+    width: 42vw;
+    /* * 90vw = 100% vom  */
+    /* max-width: 40vw; */
+    /* * ??????????? wieso max-width vergeben?? */
     object-fit: cover;
     /* * damit es nicht verzerrt wird */
 
@@ -302,7 +317,7 @@ section__ueberschriftDreiFiguren>img {
 
 }
 
-.section__bildRechtsTextLinks--blau>article{
+.section__bildRechtsTextLinks--blau>article {
     background-color: blue;
     padding-left: 2vw;
 }
@@ -313,24 +328,24 @@ section__ueberschriftDreiFiguren>img {
     margin: 2vh 0
 }
 
-.section__bildRechtsTextLinks--blau>article>ol{
+.section__bildRechtsTextLinks--blau>article>ol {
     background-color: yellow;
     padding-left: 3vw;
     font-size: 1.4rem;
     color: #848689;
 }
 
-.section__bildRechtsTextLinks--blau>article>ol>li{
+.section__bildRechtsTextLinks--blau>article>ol>li {
     background-color: yellowgreen;
 }
 
-.section__bildRechtsTextLinks--blau>article>p{
+.section__bildRechtsTextLinks--blau>article>p {
     background-color: orange;
     font-size: 1.3rem;
     color: #848689;
 }
 
-.section__bildRechtsTextLinks--blau>img{
+.section__bildRechtsTextLinks--blau>img {
     /* background-color: red; */
     width: 47vw;
 
@@ -342,23 +357,25 @@ section__ueberschriftDreiFiguren>img {
 
 /* ************************* Text über 28 Prozent ******** ******* */
 
-.section__textUeberAchtUndZwanzigProzent{
+.section__textUeberAchtUndZwanzigProzent {
     background-color: red;
-    margin: 15vh auto;          /* * auto = section mittig */
+    margin: 15vh auto;
+    /* * auto = section mittig */
     text-align: center;
     width: 40vw;
 }
 
-.section__textUeberAchtUndZwanzigProzent>h4{
+.section__textUeberAchtUndZwanzigProzent>h4 {
     background-color: blue;
     font-size: 3.5rem;
     margin-bottom: 3vh;
 }
 
-.section__textUeberAchtUndZwanzigProzent>p{
-background-color: green;
-font-size: 1.2rem;
-line-height: 1.5;       /* * 1.5 heißt 1,5 fache des normalen */
+.section__textUeberAchtUndZwanzigProzent>p {
+    background-color: green;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    /* * 1.5 heißt 1,5 fache des normalen */
 }
 
 
@@ -368,51 +385,85 @@ line-height: 1.5;       /* * 1.5 heißt 1,5 fache des normalen */
 
 /* ************************* 28 Prozent mit Überblendung und Text ***** */
 
-.section__AchtUndZwanzigProzentMitUeberblendung{
-/*     
-
-    background-image: url("../img/28.png");
-    
-    background-repeat: no-repeat;
-    background-size: 110%;
-    background-position: center ;
-     */
-
-     height: 80vh;
-     display: flex;
-     /* flex-wrap: wrap;   */         /* * damit Mobile umbricht */
-     flex-direction: column;    /* * damit articel mit Rot und Text drunter */
-    align-items: center;     
+.section__AchtUndZwanzigProzentMitUeberblendung {
+    height: 70vh;
+    display: flex;
+    /* flex-wrap: wrap;   */
+    /* * damit Mobile umbricht */
+    flex-direction: column;
+    /* * damit articel mit Rot und Text drunter */
+    align-items: center;
+    border-bottom: 2px solid #dddbdb ;
 }
 
-.section__AchtUndZwanzigProzentMitUeberblendung>img{
+.section__AchtUndZwanzigProzentMitUeberblendung>img {
     width: 120%;
-        object-fit: cover;
-        object-position: 0px 0px;   /* * Bildausschnitt versezten */
+    object-fit: cover;
+    object-position: 0px 0px;
+    /* * Bildausschnitt versezten */
 }
 
-.section__AchtUndZwanzigProzentMitUeberblendung>article{
-    width: ;
+.section__AchtUndZwanzigProzentMitUeberblendung>article {
+
     display: flex;
     justify-content: center;
     z-index: 1;
-    margin-top: -2vh;       /* * Text nach oben damit sie fast unter 2 ist */
+    margin-top: -2vh;
+    /* * Text nach oben damit sie fast unter 2 ist */
 }
 
-.section__AchtUndZwanzigProzentMitUeberblendung>article>p{
+.section__AchtUndZwanzigProzentMitUeberblendung>article>p {
     width: 55%;
-    padding-left: 13vw;         /* * Damit Text kurz vor 2 anfängt */
+    padding-left: 13vw;
+    /* * Damit Text kurz vor 2 anfängt */
     font-size: 1.7rem;
     line-height: 2;
     margin-right: -5vw;
 
 }
 
-.section__AchtUndZwanzigProzentMitUeberblendung>article>p>span{
-    display: block;         /* * mit Span wird der Zeilenumbruch erzeugt */
+.section__AchtUndZwanzigProzentMitUeberblendung>article>p>span {
+    display: block;
+    /* * mit Span wird der Zeilenumbruch erzeugt */
 }
 
-.section__AchtUndZwanzigProzentMitUeberblendung>article>img{
+.section__AchtUndZwanzigProzentMitUeberblendung>article>img {
     width: 50%;
-    margin-top: -10vh;      /* * Bild nach oben damit Hand die Acht berührt */
+    margin-top: -10vh;
+    /* * Bild nach oben damit Hand die Acht berührt */
+}
+
+
+
+
+
+
+
+/* ********************** Footer ********************* */
+/* ********************** Footer ********************* */
+/* ********************** Footer ********************* */
+
+footer{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh ;
+    margin-bottom: 5vh;
+}
+
+footer>h5{
+    background-color: blue;
+    font-size: 3.5rem;
+}
+
+footer>article{
+    background-color: red;
+    display: flex;
+
+}
+
+footer>article>img{
+    background-color: blue;
 }
