@@ -464,7 +464,6 @@ header{
 }
 
 header>section {
-    background-color: red;
     flex-direction: column;
     height: 20vh;
     justify-content: none;
@@ -472,14 +471,12 @@ header>section {
 }
 
 header>section>nav{
-    background-color: green;
     width: 100%;
     margin-left: 0;
     text-align: center;
 }
 
 header>section>nav>a{
-    background-color: aqua;
     margin-left:0;
     font-size: 2rem;
     margin: 0 2vw;
@@ -487,21 +484,18 @@ header>section>nav>a{
 }
 
 header>section>p{
-    background-color: green;
 width: 100%;
 font-size: 2rem;
 margin: 2vh 0;
 }
 
 header>section>article{
-    background-color: green;
     width: 100%;
     text-align: center;
     margin-right: 0;
 } 
 
 header>section>article>button{
-    background-color: yellow;
     
     padding: 3vh 8vw;
     font-size: 2.3rem;
@@ -509,17 +503,15 @@ header>section>article>button{
 }
 
 
-header>p{
-    background-color: orange;
+/* header>p{
 }
-
+ */
 /* ********************* media - main ************************** */
 /* ********************* media - main ************************** */
 /* ********************* media - main ************************** */
 
 main>section{
 
-    background-color: grey;
     margin-top: -25vh;
 }
 
