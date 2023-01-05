@@ -232,3 +232,14 @@ margin-bottom: 7vh;     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift
 .section__BildLinksTextRechts>article>p{
     font-size: 1.4rem;
 }
+
+
+
+
+
+
+/* *********************** Bild rechts Text links *************** */
+
+.section__bildRechtsTextLinks--blau{
+    background-color: #f1f1f4;
+}
