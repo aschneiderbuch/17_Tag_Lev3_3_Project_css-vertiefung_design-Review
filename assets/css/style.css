@@ -45,5 +45,41 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
     max-width: 1440px;
-
 }
+
+/* ********************** Class  ********************* */
+/* ******* Font-Family ***** */
+
+/* **** header button, */
+.fontFamily--GraphikMedium{
+font-family: Graphik-Medium, sans-serif;
+}
+
+/* **** header nav,  */
+.fontFamily--GraphikerRegular{
+font-family: Graphik-Regular, sans-serif;
+}
+
+/* font-family: Theinhardt-Lt, sans-serif; */
+
+/* **** header p, */
+.fontFamily--TiempostHeadlineSemibold{
+font-family: TiempostHeadline-Semibold, sans-serif;
+}
+
+/* ********* Color ********* */
+
+h1{
+color: #2b2c2e#9Fa2a7 #27282a #848689 #3d3e41                ;
+}
+
+/* ********************** Header ******************** */
+/* ********************** Header ******************** */
+/* ********************** Header ******************** */
+
+
+
+
+/* ********************* Body ************************** */
+/* ********************* Body ************************** */
+/* ********************* Body ************************** */
