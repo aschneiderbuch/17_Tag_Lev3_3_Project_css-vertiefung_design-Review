@@ -1,3 +1,7 @@
+
+
+/* ***************   ??? wieso gibt es rechts einen weißen Balken ??? wie geht er weg ??? */
+
 /* ********** Font-Family ***********
 
 
@@ -29,7 +33,7 @@ font-family: TiempostHeadline-Semibold, sans-serif;
 
 @font-face {
     font-family: TiempostHeadline-Semibold;
-    src: url("../fonts/TiempostHeadline-Semibold.woff");
+    src: url("../fonts/TiemposHeadline-Semibold.woff");
 }
 
 
@@ -92,12 +96,6 @@ html {
 
 
 
-/* ******************** Img **************** */
-
-img {
-    width: 400px;              /* * damit anfangs im html die Bilder kleiner werden bis sie 
-                                * einzeln gestylt wurden */
-}
 
 
 
@@ -108,7 +106,7 @@ img {
 
 header {
     background-image: url("../img/home_hero.png");
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -118,8 +116,7 @@ header {
 }
 
 header>section {
-    margin: 0 auto;
-    width: 100vw;
+     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,21 +131,7 @@ header>section>nav {
 header>section>nav>a {
     text-decoration: none;
     margin-left: 1vw;
-}
-
-header>section>article {
-    width: 20vw;
-    text-align: right;
-    padding-right: 5vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
-/* *************************************** Button größer ????? ********* */
-/* *  evtl. mal als p veruschen oder ID */
-header>section>button {
-    background-color: #fff;
-    text-align: right;
+    color: black;
 }
 
 header>section>p {
@@ -157,6 +140,27 @@ header>section>p {
     font-size: 1.6rem;
     font-weight: bold;
     /* * Schrift in dick */
+}
+
+
+header>section>article {
+    width: 20vw;
+    text-align: right;
+    /* padding-right: 5vw; */
+    /* padding-top: 1vh; */
+    /* padding-bottom: 1vh; */
+    margin-right: 5vw;
+}
+
+header>section>article>button {
+    background-color: #fff;
+    padding: 1vh 2vw 1vh 2vw ;
+    text-align: center;
+}
+
+header>section>article>button:hover{
+    background-color: black;
+    color: #fff;
 }
 
 header>p {
@@ -170,11 +174,10 @@ header>p {
 /* ********************* main ************************** */
 /* ********************* main ************************** */
 
-main {
+main>section {
     /* background-color: gray; */     /* * damit Einrückung unterlegt ist */
-    width: 90vw;                /* * damit alle Sections eingerückt sind */
+    width: 90%;                 /* * damit alle Sections eingerückt sind */
     margin: 0 auto;
-    ;
 }
 
 
@@ -197,12 +200,12 @@ section__ueberschriftDreiFiguren>p {
 }
 
 section__ueberschriftDreiFiguren>img {
-    width: 100%;
+    width: 100vw;
     /* * damit Bild ganze nicht gestaucht wird */
     height: 81vh;
     /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
-    max-width: 100%;
-    /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
+/*     max-width: 100%;
+ */    /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
     object-fit: cover;
     /* * Bild verzerrt sich nicht mehr */
 }
@@ -214,7 +217,6 @@ section__ueberschriftDreiFiguren>img {
 /* ********************** Zwei Text mit Dollar ******************* */
 
 .section__texteUeberDollar {
-    background-color: green;
     display: flex;
     flex-wrap: wrap;
     /* * bricht bei Handy um, wenn es zu schmal wird */
@@ -223,13 +225,11 @@ section__ueberschriftDreiFiguren>img {
 }
 
 .section__texteUeberDollar>p {
-    background-color: blue;
     width: 55vw;
     font-size: 1.35rem;
 }
 
 .section__texteUeberDollar>article {
-    background-color: orange;
     width: 10vw;
     /* * bei Handy vergrößern  */
     margin-left: 5vw;
@@ -253,7 +253,6 @@ section__ueberschriftDreiFiguren>img {
 /* *********************** Bild links Text rechts *************** */
 
 .section__BildLinksTextRechts {
-    background-color: red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -263,7 +262,6 @@ section__ueberschriftDreiFiguren>img {
 
 
 .section__BildLinksTextRechts>img {
-    background-color: blue;
     width: 42vw;
     /* * 90vw = 100% vom  */
     /* max-width: 40vw; */
@@ -277,27 +275,23 @@ section__ueberschriftDreiFiguren>img {
 }
 
 .section__BildLinksTextRechts>article {
-    background-color: green;
     width: 47vw;
     margin-left: 1vw;
 }
 
 .section__BildLinksTextRechts>article>h2 {
-    background-color: yellow;
     font-size: 4rem;
     margin-bottom: 7vh;
     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift */
 }
 
 .section__BildLinksTextRechts>article>h3 {
-    background-color: yellowgreen;
     font-size: 1.7rem;
     margin: 2vh 0;
     /* * Abstand zu den Blck Texten */
 }
 
 .section__BildLinksTextRechts>article>p {
-    background-color: aqua;
     font-size: 1.4rem;
     color: #848689;
 }
@@ -318,29 +312,23 @@ section__ueberschriftDreiFiguren>img {
 }
 
 .section__bildRechtsTextLinks--blau>article {
-    background-color: blue;
     padding-left: 2vw;
 }
 
 .section__bildRechtsTextLinks--blau>article>h2 {
-    background-color: aqua;
     font-size: 4rem;
     margin: 2vh 0
 }
 
 .section__bildRechtsTextLinks--blau>article>ol {
-    background-color: yellow;
     padding-left: 3vw;
     font-size: 1.4rem;
     color: #848689;
 }
 
-.section__bildRechtsTextLinks--blau>article>ol>li {
-    background-color: yellowgreen;
-}
+
 
 .section__bildRechtsTextLinks--blau>article>p {
-    background-color: orange;
     font-size: 1.3rem;
     color: #848689;
 }
@@ -358,7 +346,6 @@ section__ueberschriftDreiFiguren>img {
 /* ************************* Text über 28 Prozent ******** ******* */
 
 .section__textUeberAchtUndZwanzigProzent {
-    background-color: red;
     margin: 15vh auto;
     /* * auto = section mittig */
     text-align: center;
@@ -366,13 +353,11 @@ section__ueberschriftDreiFiguren>img {
 }
 
 .section__textUeberAchtUndZwanzigProzent>h4 {
-    background-color: blue;
     font-size: 3.5rem;
     margin-bottom: 3vh;
 }
 
 .section__textUeberAchtUndZwanzigProzent>p {
-    background-color: green;
     font-size: 1.2rem;
     line-height: 1.5;
     /* * 1.5 heißt 1,5 fache des normalen */
@@ -454,24 +439,20 @@ footer{
 }
 
 footer>h5{
-    background-color: blue;
     font-size: 3.5rem;
 }
 
 footer>article{
-    background-color: red;
     display: flex;
     margin-top: 10vh;           /* * Abstand von Bild zu Überschrift */
 
 }
 
 footer>article>img{
-    background-color: blue;
     width: 10vw;                /* * Bild verkleinern */
 }
 
 footer>article>p{
-    background-color: green;
     align-self: flex-end;       /* * Text unten links hin */
     color: #9Fa2a7;
     font-size: 1.1rem;
@@ -480,7 +461,6 @@ footer>article>p{
 }
 
 footer>article>p>a{
-    background-color: orange;
     color: #27282a;
     text-decoration: none;
 }
