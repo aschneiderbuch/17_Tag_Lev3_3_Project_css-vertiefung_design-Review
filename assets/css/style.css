@@ -331,7 +331,7 @@ section__ueberschriftDreiFiguren>img {
 }
 
 .section__bildRechtsTextLinks--blau>img{
-    background-color: red;
+    /* background-color: red; */
     width: 47vw;
 
 }
@@ -344,4 +344,19 @@ section__ueberschriftDreiFiguren>img {
 
 .section__textUeberAchtUndZwanzigProzent{
     background-color: red;
+    margin: 15vh auto;          /* * auto = section mittig */
+    text-align: center;
+    width: 60vw;
+}
+
+.section__textUeberAchtUndZwanzigProzent>h4{
+    background-color: blue;
+    font-size: 4rem;
+    margin-bottom: 3vh;
+}
+
+.section__textUeberAchtUndZwanzigProzent>p{
+background-color: green;
+font-size: 1.4rem;
+
 }
