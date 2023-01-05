@@ -42,6 +42,7 @@ font-family: TiempostHeadline-Semibold, sans-serif;
 }
 
 html {
+    /* background-color: rgb(103, 96, 96); */    /*  * für Darkmode mit Button */
     font-size: 16px;
     scroll-behavior: smooth;
     max-width: 1440px;
@@ -159,7 +160,7 @@ header>p {
 /* ********************* main ************************** */
 
 main {
-    background-color: red;
+    background-color: gray;
     width: 90vw;
     margin: 0 auto;
     ;
@@ -239,41 +240,49 @@ section__ueberschriftDreiFiguren>img {
 /* *********************** Bild links Text rechts *************** */
 
 .section__BildLinksTextRechts {
+    background-color: red;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15vh;
 }
 
+
+
 .section__BildLinksTextRechts>img {
-    width: 35vw;
-    max-width: 40;
-    /* * ??????????? wieso max-width vergeben?? */
+    background-color: blue;
+    width: 42vw;            /* * 90vw = 100% vom  */
+/* max-width: 40vw; */    /* * ??????????? wieso max-width vergeben?? */
     object-fit: cover;
     /* * damit es nicht verzerrt wird */
 
     /* object-position:center */
     ;
     /* * Bild Ausschnitt zeigen  */
-    margin-left: 5vw;
 }
 
 .section__BildLinksTextRechts>article {
-    width: 40vw;
+    background-color: green;
+    width: 47vw;
     margin-left: 1vw;
 }
 
 .section__BildLinksTextRechts>article>h2 {
+    background-color: yellow;
     font-size: 4rem;
     margin-bottom: 7vh;
     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift */
 }
 
 .section__BildLinksTextRechts>article>h3 {
+    background-color: yellowgreen;
     font-size: 1.7rem;
     margin: 2vh 0;
     /* * Abstand zu den Blck Texten */
 }
 
 .section__BildLinksTextRechts>article>p {
+    background-color: aqua;
     font-size: 1.4rem;
 }
 
@@ -286,4 +295,25 @@ section__ueberschriftDreiFiguren>img {
 
 .section__bildRechtsTextLinks--blau {
     background-color: #f1f1f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section__bildRechtsTextLinks--blau>article{
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+.section__bildRechtsTextLinks--blau>img{
+    background-color: red;
+    width: 47vw;
+
 }
