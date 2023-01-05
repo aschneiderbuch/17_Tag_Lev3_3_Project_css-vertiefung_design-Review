@@ -284,6 +284,7 @@ section__ueberschriftDreiFiguren>img {
 .section__BildLinksTextRechts>article>p {
     background-color: aqua;
     font-size: 1.4rem;
+    color: #848689;
 }
 
 
@@ -316,6 +317,7 @@ section__ueberschriftDreiFiguren>img {
     background-color: yellow;
     padding-left: 3vw;
     font-size: 1.4rem;
+    color: #848689;
 }
 
 .section__bildRechtsTextLinks--blau>article>ol>li{
@@ -325,10 +327,21 @@ section__ueberschriftDreiFiguren>img {
 .section__bildRechtsTextLinks--blau>article>p{
     background-color: orange;
     font-size: 1.3rem;
+    color: #848689;
 }
 
 .section__bildRechtsTextLinks--blau>img{
     background-color: red;
     width: 47vw;
 
+}
+
+
+
+
+
+/* ************************* Text über 28 Prozent ******** ******* */
+
+.section__textUeberAchtUndZwanzigProzent{
+    background-color: red;
 }
