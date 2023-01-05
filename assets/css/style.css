@@ -45,6 +45,12 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
     max-width: 1440px;
+    /* **** wenn Monitor mehr als 1440 px 
+                                    * dann kommt rechts weißer Streifen 
+                                    * da dann einfach max-width raus nehmen
+                                    * 1440px x 900px ist mac Display 
+                                    * da 0,625 Verhältniss
+                                 */
 }
 
 /* ********************** Class  ********************* */
@@ -76,9 +82,7 @@ html {
 
 /* ********* Color ********* */
 
-h1 {
-    color: #2b2c2e#9Fa2a7 #27282a #848689 #3d3e41;
-}
+
 
 /* ******************** Img **************** */
 
@@ -90,11 +94,24 @@ img {
 /* ********************** Header ******************** */
 /* ********************** Header ******************** */
 
+header {
+    background-image: url("../img/home_hero.png");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+
+}
+
 header>section {
+    margin: 0 auto;
+    width: 100vw;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 7vh;
 }
 
 header>section>nav {
@@ -102,62 +119,80 @@ header>section>nav {
     width: 20vw;
 }
 
-header>section>nav>a{
+header>section>nav>a {
     text-decoration: none;
     margin-left: 1vw;
 }
-header>section>article{
+
+header>section>article {
     width: 20vw;
     text-align: right;
     padding-right: 5vw;
     padding-top: 1vh;
-padding-bottom: 1vh;
+    padding-bottom: 1vh;
 }
 
 /* *************************************** Button größer ????? ********* */
 /* *  evtl. mal als p veruschen oder ID */
 header>section>button {
     background-color: #fff;
-    text-align:right ;
+    text-align: right;
 }
 
 header>section>p {
     width: 20vw;
     text-align: center;
     font-size: 1.6rem;
-    font-weight: bold;               /* * Schrift in dick */
+    font-weight: bold;
+    /* * Schrift in dick */
+}
+
+header>p {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 5vh;
+}
+
+
+/* ********************* main ************************** */
+/* ********************* main ************************** */
+/* ********************* main ************************** */
+
+main {
+    background-color: red;
+    width: 90vw;
+    margin: 0 auto;
+    ;
 }
 
 
 
-
-    /* ********************* main ************************** */
-    /* ********************* main ************************** */
-    /* ********************* main ************************** */
+/* ******************* Überschrift mit drei Figuren Bild ********** */
 
 
+section__ueberschriftDreiFiguren {
+    display: flex;
+    flex-direction: column;
+    /* * damit p und img untereinander */
+    align-items: center;
+}
 
+section__ueberschriftDreiFiguren>p {
+    margin-top: 10vh;
+    /* * Abstand zum header */
+    font-size: 2.3rem;
 
+}
 
-    /* ******************* Überschrift mit drei Figuren Bild ********** */
-
-    .section__ueberschriftDreiFiguren{
-        display: flex;
-        flex-direction: column; /* * damit p und img untereinander */
-        align-items: center;
-    }
-
-    .section__ueberschriftDreiFiguren>p{
-        margin-top: 10vh;               /* * Abstand zum header */
-        font-size: 2.3rem;
-
-    }
-
-.section__ueberschriftDreiFiguren>img{
-   width: 100%;             /* * damit Bild ganze nicht gestaucht wird */
-    height: 81vh;           /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
-    max-width: 100%;        /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
-    object-fit: cover;      /* * Bild verzerrt sich nicht mehr */
+section__ueberschriftDreiFiguren>img {
+    width: 100%;
+    /* * damit Bild ganze nicht gestaucht wird */
+    height: 81vh;
+    /* ***** damit nav p und bild insgesammt 100vh sind und auf ganzen bildschirm zu sehen sind */
+    max-width: 100%;
+    /* * damit Bild beim Browserfenster größe ziehen nicht verzehrt wird */
+    object-fit: cover;
+    /* * Bild verzerrt sich nicht mehr */
 }
 
 
@@ -166,29 +201,31 @@ header>section>p {
 
 /* ********************** Zwei Text mit Dollar ******************* */
 
-.section__texteUeberDollar{
+.section__texteUeberDollar {
+    background-color: green;
     display: flex;
-
-    swidth: 100%;
-    margin: 10vh auto 15vh auto;
+    flex-wrap: wrap;                    /* * bricht bei Handy um, wenn es zu schmal wird */
+    width: 100%;
+    margin: 0vh auto 15vh auto;
 }
 
-.section__texteUeberDollar>p{
+.section__texteUeberDollar>p {
+    background-color: blue;
+    width: 55vw;
+    font-size: 1.35rem;
+}
+
+.section__texteUeberDollar>article {
+    background-color: orange;
+    width: 10vw;                        /* * bei Handy vergrößern  */
     margin-left: 5vw;
-    width: 49vw;
-    font-size: 1.3rem;
 }
 
-.section__texteUeberDollar>article{
-    width: 10vw;
-    margin-left: 5vw;
-}
-
-.section__texteUeberDollar>article>p:nth-of-type(1){
+.section__texteUeberDollar>article>p:nth-of-type(1) {
     font-size: 2.5rem;
 }
 
-.section__texteUeberDollar>article>p:nth-of-type(2){
+.section__texteUeberDollar>article>p:nth-of-type(2) {
     color: #9Fa2a7;
     font-size: 1rem;
 }
@@ -201,35 +238,42 @@ header>section>p {
 
 /* *********************** Bild links Text rechts *************** */
 
-.section__BildLinksTextRechts{
+.section__BildLinksTextRechts {
     display: flex;
-flex-direction: row;}
+    flex-direction: row;
+}
 
-.section__BildLinksTextRechts>img{
+.section__BildLinksTextRechts>img {
     width: 35vw;
-    max-width: 40;          /* * ??????????? wieso max-width vergeben?? */
-    object-fit: cover;          /* * damit es nicht verzerrt wird */
-    
-    /* object-position:center */ ; /* * Bild Ausschnitt zeigen  */
+    max-width: 40;
+    /* * ??????????? wieso max-width vergeben?? */
+    object-fit: cover;
+    /* * damit es nicht verzerrt wird */
+
+    /* object-position:center */
+    ;
+    /* * Bild Ausschnitt zeigen  */
     margin-left: 5vw;
 }
 
-.section__BildLinksTextRechts>article{
+.section__BildLinksTextRechts>article {
     width: 40vw;
     margin-left: 1vw;
 }
 
-.section__BildLinksTextRechts>article>h2{
-font-size: 4rem;
-margin-bottom: 7vh;     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift */
+.section__BildLinksTextRechts>article>h2 {
+    font-size: 4rem;
+    margin-bottom: 7vh;
+    /* * Abstand zur h3 bzw. zur nächsten Text Überschrift */
 }
 
-.section__BildLinksTextRechts>article>h3{
+.section__BildLinksTextRechts>article>h3 {
     font-size: 1.7rem;
-    margin: 2vh 0 ;     /* * Abstand zu den Blck Texten */
+    margin: 2vh 0;
+    /* * Abstand zu den Blck Texten */
 }
 
-.section__BildLinksTextRechts>article>p{
+.section__BildLinksTextRechts>article>p {
     font-size: 1.4rem;
 }
 
@@ -240,6 +284,6 @@ margin-bottom: 7vh;     /* * Abstand zur h3 bzw. zur nächsten Text Überschrift
 
 /* *********************** Bild rechts Text links *************** */
 
-.section__bildRechtsTextLinks--blau{
+.section__bildRechtsTextLinks--blau {
     background-color: #f1f1f4;
 }
