@@ -378,7 +378,6 @@ line-height: 1.5;       /* * 1.5 heißt 1,5 fache des normalen */
     background-position: center ;
      */
 
-     background-color:red;
      height: 80vh;
      display: flex;
      /* flex-wrap: wrap;   */         /* * damit Mobile umbricht */
@@ -390,10 +389,30 @@ line-height: 1.5;       /* * 1.5 heißt 1,5 fache des normalen */
     width: 120%;
         object-fit: cover;
         object-position: 0px 0px;   /* * Bildausschnitt versezten */
-    
 }
 
 .section__AchtUndZwanzigProzentMitUeberblendung>article{
-    background-color: yellow;
+    width: ;
     display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -2vh;       /* * Text nach oben damit sie fast unter 2 ist */
+}
+
+.section__AchtUndZwanzigProzentMitUeberblendung>article>p{
+    width: 55%;
+    padding-left: 13vw;         /* * Damit Text kurz vor 2 anfängt */
+    font-size: 1.7rem;
+    line-height: 2;
+    margin-right: -5vw;
+
+}
+
+.section__AchtUndZwanzigProzentMitUeberblendung>article>p>span{
+    display: block;         /* * mit Span wird der Zeilenumbruch erzeugt */
+}
+
+.section__AchtUndZwanzigProzentMitUeberblendung>article>img{
+    width: 50%;
+    margin-top: -10vh;      /* * Bild nach oben damit Hand die Acht berührt */
 }
