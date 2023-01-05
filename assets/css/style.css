@@ -610,6 +610,33 @@ order: -1
 /* ******************* media - Text über 28 Prozent ******** ******* */
 
 
+.section__textUeberAchtUndZwanzigProzent {
+background-color: red;
+width: 100%;
+margin: 3vh auto;
+}
+
+.section__textUeberAchtUndZwanzigProzent>h4 {
+font-size: 3rem;
+}
+
+
+
+
+
+/* ******************** media - 28 Prozent mit Überblendung und Text ***** */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
